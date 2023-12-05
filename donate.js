@@ -115,6 +115,15 @@ recuringDonation = function(donateValue, rec) {
     
 }
 
+personalInfo = function(Name, Email) {
+    Name = document.getElementById("first").value;
+    Email = document.getElementById("email").value;
+    console.log(name + " " + email);
+    console.log("Name: " + name + " Email: " + email);
+    return Name, Email;
+
+}
+
 form.addEventListener("submit", formInput,false);
 pay.addEventListener("submit",formInput,false) 
 
@@ -134,11 +143,10 @@ function formInput(event) {
         console.log(this);
     }
     else if (this.id == "page2") {
-
         console.log("here");
 
         window.location.assign("./index.html"); //will send you back to the main page
-        window.alert(document.getElementById("amount").innerHTML = "Thank you for your donation of $" + getDonation(chosen) + "!");
+        window.alert(document.getElementById("amount").innerHTML = "Thank you for your donation of $" + getDonation(chosen) + " " + Name + "!");
     }
   
 }
