@@ -70,8 +70,10 @@ function select () {
   
   if (this.id == "myCheck" && YN[0] == false) {
       YN [0] = true;
+      rec = true;
   } else {
       YN [0] = false;
+      rec = false;
   }
   console.log(chosen);
   console.log(YN);
@@ -100,7 +102,18 @@ getDonation = function (chosen) {
 
 }
 
-
+recuringDonation = function(donateValue, rec) {
+    let x = getDonation(chosen);
+    console.log(donateValue + "in to recdon " + rec + " " + x);
+    if (rec == true && x > 0) {
+       x *= 12;
+    }else{
+        console.log("Not recurring");
+    }
+    console.log(x);
+    return x;
+    
+}
 
 form.addEventListener("submit", formInput,false);
 pay.addEventListener("submit",formInput,false) 
@@ -110,7 +123,14 @@ function formInput(event) {
     
     if(this.id == "test") {
         modal.style.display = "block";
-        document.getElementById("amount").innerHTML = "Your Donation is $" + getDonation(chosen) + "!";
+        console.log("rec =" + rec);
+        //recuringDonation(donateValue, rec);
+        if(rec == false){
+            document.getElementById("amount").innerHTML = "Your Donation is $" + getDonation(chosen); + "!";
+        }else if(rec == true){
+            document.getElementById("amount").innerHTML = "Your Donation is $" + recuringDonation(donateValue, rec) + "!";
+            //document.getElementById("signup").innerHTML = "You have signed up for our newsletter!";
+        }
         console.log(this);
     }
     else if (this.id == "page2") {
