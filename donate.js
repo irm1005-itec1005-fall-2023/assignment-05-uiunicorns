@@ -93,7 +93,7 @@ function formInput(event) {
 
         console.log("here");
 
-        window.location.assign("http://127.0.0.1:3000/donateMockUp/index.html?inputName="); //will send you back to the main page
+        window.location.assign("http://127.0.0.1:3000/assignment-05-uiunicorns/donate.html"); //will send you back to the main page
         window.alert("Thank you for your donation");
     }
   
