@@ -53,13 +53,15 @@
                             <fieldset>
                                 
                             <input type="text" id="cstm" name="inputAmount" placeholder="name on card" required/>
-                            <input type="text" id="cstm" name="inputAmount" placeholder="card number" required/>
-                            <input type="text" id="cstm" name="inputAmount" placeholder="card expiry date" required/>
-                            <input type="text" id="cstm" name="inputAmount" placeholder="CVV" required/>
+                            <input type="tel" id="cstm" name="inputAmount" placeholder="card number" required maxlength="19"/>
+                            <input type="date" id="cstm" name="inputAmount" placeholder="card expiry date" required/>
+                            <input type="number" id="cstm" name="inputAmount" placeholder="CVV" required maxlength="4"/>
                             </fieldset>
                     
                             
-                            
+                            <fieldset>
+                                <span id="amount" style="color: black;"></span>
+                            </fieldset>
                        
                     
                             <button class="btn" type="submit" id="finish">donate</button>
