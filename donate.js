@@ -77,6 +77,29 @@ function select () {
   console.log(YN);
 }
 
+getDonation = function (chosen) {
+
+    if (chosen[0] == 1) {
+        donateValue = 10;
+    }
+    else if (chosen[0] == 2) {
+        donateValue = 20;
+    }
+    else if (chosen[0] == 3) {
+        donateValue = 30;
+    }
+    else if (chosen[0] == 4) {
+        donateValue = 40;
+    }
+    else if (chosen[0] == 5) {
+        donateValue = field.value;
+    }
+    console.log(donateValue);
+    return donateValue;
+    
+
+}
+
 
 
 form.addEventListener("submit", formInput,false);
@@ -87,14 +110,15 @@ function formInput(event) {
     
     if(this.id == "test") {
         modal.style.display = "block";
+        document.getElementById("amount").innerHTML = "Your Donation is $" + getDonation(chosen) + "!";
         console.log(this);
     }
     else if (this.id == "page2") {
 
         console.log("here");
 
-        window.location.assign("http://127.0.0.1:3000/assignment-05-uiunicorns/donate.html"); //will send you back to the main page
-        window.alert("Thank you for your donation");
+        window.location.assign("./index.html"); //will send you back to the main page
+        window.alert(document.getElementById("amount").innerHTML = "Thank you for your donation of $" + getDonation(chosen) + "!");
     }
   
 }
@@ -115,8 +139,9 @@ span.onclick = function() {
 
 function inititialise() {
 
-h1.textContent = "Donate";
-appContainer.appendChild(h1);
+//h1.textContent = "Donate";
+//appContainer.appendChild(h1);
+
 
 document.addEventListener("DOMContentLoaded", function() {
   // Your code here
