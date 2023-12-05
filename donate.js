@@ -24,7 +24,16 @@ let fourty = document.getElementById("btn40");
 
 let field = document.getElementById("cstm");
 let signUp = document.getElementById("myCheck");
+let pay = document.getElementById("page2");
 
+// Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+let btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
 
 // Functions
 
@@ -70,15 +79,38 @@ function select () {
 
 
 
-form = document.addEventListener("submit", formInput);
+form.addEventListener("submit", formInput,false);
+pay.addEventListener("submit",formInput,false) 
 
 function formInput(event) {
-  //console.log("huh");
+    event.preventDefault();
+    
+    if(this.id == "test") {
+        modal.style.display = "block";
+        console.log(this);
+    }
+    else if (this.id == "page2") {
+
+        console.log("here");
+
+        window.location.assign("http://127.0.0.1:3000/donateMockUp/index.html?inputName="); //will send you back to the main page
+        window.alert("Thank you for your donation");
+    }
   
 }
 
 
-
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 
 
 function inititialise() {
