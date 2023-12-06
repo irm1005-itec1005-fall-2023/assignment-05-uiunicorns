@@ -1,40 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Set the page title -->
-    <title>Group Project</title>
+<html lang="en-ca">
 
-    <!-- Set the charset we're using to UTF-8 -->
-    <meta charset="UTF-8" />
+<head>
+  <!-- Set the page title -->
+  <title>Group Project</title>
 
-    <!-- Set the screens default zoom / scale to 1 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Set the charset we're using to UTF-8 -->
+  <meta charset="utf-8" />
 
-    <!-- Specifies the document mode for Internet Explorer -->
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Set the screens default zoom / scale to 1 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- We are using a CSS Reset file to standardize browser default css -->
-    <link rel="stylesheet" href="./reset.css" />
+  <!-- Specifies the document mode for Internet Explorer -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- This is where all of our awesome CSS code goes -->
-    <link rel="stylesheet" href="./style.css" />
+  <!-- We are using a CSS Reset file to standardize browser default css -->
+  <link rel="stylesheet" href="./reset.css" />
 
-    <!-- Set the Favicon  -->
-    <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
-  </head>
-  <body>
-    <!--
+  <!-- This is where all of our awesome CSS code goes -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-      ADD YOUR GROUP PROJECT CODE
+<body>
 
-      YOU MAY REMOVE THE BOILERPLATE CODE BELOW
+   <!--
+      
+      LIST ANY CITATIONS HERE
+
+        * ChatGPT for indenting some code and fixing the spacing, also helping me understand some W3C validation erros
+        * https://www.w3schools.com/css/css_grid.asp
+        * https://tejabeetan06.wixsite.com/sanfernando
 
     -->
-    <main>
-      <div id="app"></div>
-    </main>
 
-    <!-- This is where we add our awesome JavaScript code -->
-    <script src="./script.js"></script>
-  </body>
+    <!--
+
+      YOU HAVE TO MODIFY THE HTML TO BUILD YOUR AWESOME PAGE
+
+    -->
+
+  <header>
+    <h2 class="title">The San Fernando Foundation</h2>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="Contact.html">Contact us</a>
+      </li>
+      <li>
+        <a href="donate.html">Donate</a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/sanfernandofoundation/">Instagram</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="who">
+      <div class="txt">
+        <h2>Who we are</h2>
+        <p>Welcome to The San Fernando Foundation, a non-profit organization dedicated to improving mental health access in Ottawa, with a particular emphasis on men's mental health and marginalized groups. Our mission is inspired by the memory of our founder's father, who tragically lost his life to suicide in 2021.</p>
+        <p>The foundation is named after San Fernando, Trinidad, where our founder's father was born and raised. This name is a tribute to his deep connection to the culture and music that define the region. It's a reminder that he was more than the pain he endured, and our organization seeks to honour his memory by making mental health resources more accessible to those who need them most.</p>
+      </div><img class="size" src="images/san%20fernando!.jpeg.webp" alt="San Fernando">
+    </section>
+    <section class="mhealth">
+      <div class="txt2">
+        <h2>Mental Health is just as important as physical health.</h2>
+        <p>The San Fernando Foundation is dedicated to making mental health resources more accessible in our community, with a focus on men's mental health. Our mission is to provide support and resources to those in need, and to reduce the stigma surrounding mental health. We believe that everyone deserves access to quality mental health care, regardless of their background or financial situation.</p>
+      </div><img class="size" src="images/Screenshot%202023-10-17%20at%209.55.37%20PM.png" alt="San Fernando">
+    </section>
+    <section>
+      <img class="stretch" src="images/be6dd5_f43b3fe89f0445a982c25285568841e1~mv2.jpeg.webp" alt="City">
+      <section class="divider">
+        <h2>Help us make a difference.</h2>
+        <p>The San Fernando Foundation is committed to raising money to donate to the following programs and organizations in Ottawa that offer free access to mental health resources/psychotherapy. Donations allow these programs to continue running smoothly and make them even better.</p>
+      </section>
+      <section class="impact">
+        <div class="row">
+          <img class="image" src="images/st%20paul.jpeg.webp" alt="StPaul">
+          <h3>Saint Paul University’s Counselling and Psychotherapy Centre</h3>
+          <p>We are proud to raise money for Saint Paul University's Counselling and Psychotherapy Centre. They provide up to 30 appointments per person and offer services in both English and French</p>
+        </div>
+        <div class="row">
+          <img class="image" src="images/CMHA.jpeg.webp" alt="CMHA">
+          <h3>Canadian Mental Health Association, Ottawa Branch</h3>
+          <p>The Canadian Mental Health Association is dedicated to promoting good mental health, developing and implementing sustainable support systems and services, and encouraging public action to strengthen community mental health services and related policies and legislation.</p>
+        </div>
+        <div class="row">
+          <img class="image" src="images/Upstream.png.webp" alt="Upstream">
+          <h3>Upstream Ottawa</h3>
+          <p>Upstream Ottawa has been a provider of community based mental health services since 1985. We are committed to providing meaningful community-based, client-focused and equitable mental health, substance-use health and addiction support services to adult and youth populations.</p>
+        </div>
+      </section>
+    </section>
+    <section class="contact">
+      <h2>Contact us to learn more about our work and how you can get involved.</h2>
+      <form>
+        <fieldset>
+          <label for="name">Name:</label> <input type="text" id="name" name="name" autocomplete="name" required=""> <label for="email">Email:</label> <input type="email" id="email" name="email" autocomplete="email" required=""> <label for="phone">Phone:</label> <input type="tel" id="phone" name="phone" autocomplete="tel" required="">
+        </fieldset>
+        <p>Message:</p>
+        <fieldset>
+          <textarea id="textarea" name="feedback" required=""></textarea> <input type="checkbox" id="checkbox" name="checkbox"> <label for="checkbox">Sample Confirmation</label> <input type="submit" value="Submit Message">
+        </fieldset>
+      </form>
+    </section>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="Contact.html">Contact us</a>
+        </li>
+        <li>
+          <a href="donate.html">Donate</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/sanfernandofoundation/">Instagram</a>
+        </li>
+      </ul>
+    </nav>
+    <footer>
+      <p>© 2023 The San Fernando Foundation. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
 </html>
