@@ -50,34 +50,59 @@ signUp.addEventListener("click", select,false)
 function select () {
   if (this.id == "btn10") {
       //css goes here
+      document.getElementById("btn10").style.background = "rgba(255,255,255, 0.647)";
+      document.getElementById("btn20").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn30").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn40").style.background = "rgb(215, 147, 79)";
       chosen [0] = 1;
   }
   else if (this.id == "btn20") {
       //css goes here
+      document.getElementById("btn10").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn20").style.background = "rgb(255,255,255, 0.647)";
+      document.getElementById("btn30").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn40").style.background = "rgb(215, 147, 79)";
       chosen [0] = 2;
   } 
   else if (this.id == "btn30") {
       //css goes here
+      document.getElementById("btn10").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn20").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn30").style.background = "rgb(255,255,255, 0.647)";
+      document.getElementById("btn40").style.background = "rgb(215, 147, 79)";
       chosen [0] = 3;
   }
   else if (this.id == "btn40") {
       //css goes here
+      document.getElementById("btn10").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn20").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn30").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn40").style.background = "rgb(255,255,255, 0.647)";
       chosen [0] = 4;
   }
   else if (this.id == "cstm") {
       chosen [0] = 5;
+      document.getElementById("btn10").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn20").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn30").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn40").style.background = "rgb(215, 147, 79)";
   }
   
   if (this.id == "myCheck" && YN[0] == false) {
       YN [0] = true;
       rec = true;
-  } else {
+  } else if (this.id == "cstm"){
+
+  }
+   else {
       YN [0] = false;
       rec = false;
   }
   console.log(chosen);
   console.log(YN);
 }
+
+
 
 getDonation = function (chosen) {
 
