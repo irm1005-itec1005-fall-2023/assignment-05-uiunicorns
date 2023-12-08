@@ -196,6 +196,7 @@ ul {
 .size {
   max-width: 50%;
   height: auto;
+  margin-bottom: 40px;
 }
 
 @media only screen and (max-width: 1000px) {
