@@ -8,9 +8,16 @@
   font-size: 1.25rem;
 }
 
-html{
+@media screen and (max-width:800px) {
+  main {
+    font-size: 100%;
+  }
+}
+
+html {
   scroll-behavior: smooth;
 }
+
 body {
   background-color: rgb(35, 47, 86);
   color: white;
@@ -37,6 +44,14 @@ body {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+@media screen and (max-width:800px) {
+  .black {
+    font-size: 10px;
+    padding: 0;
+    height: 30px;
+  }
+}
+
 li {
   border-style: solid;
   border-color: rgb(215, 79, 79);
@@ -46,6 +61,15 @@ li {
   text-align: center;
   padding: 15px;
   border-radius: 3px;
+}
+
+@media screen and (max-width:800px) {
+  li {
+    font-size: 15px;
+    padding: 5px;
+    height: 50px;
+    margin: 10px;
+  }
 }
 
 a {
