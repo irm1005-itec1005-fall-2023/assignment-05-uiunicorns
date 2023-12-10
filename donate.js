@@ -22,7 +22,7 @@ let twenty = document.getElementById("btn20");
 let thirty = document.getElementById("btn30");
 let fourty = document.getElementById("btn40");
 
-let field = document.getElementById("cstm");
+let field = document.querySelector(".cstm");
 let signUp = document.getElementById("myCheck");
 let pay = document.getElementById("page2");
 
@@ -51,41 +51,41 @@ function select () {
   if (this.id == "btn10") {
       //css goes here
       document.getElementById("btn10").style.background = "rgba(255,255,255, 0.647)";
-      document.getElementById("btn20").style.background = "rgb(215, 147, 79)";
-      document.getElementById("btn30").style.background = "rgb(215, 147, 79)";
-      document.getElementById("btn40").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn20").style.background = "rgb(35, 47, 86)";
+      document.getElementById("btn30").style.background = "rgb(35, 47, 86)";
+      document.getElementById("btn40").style.background = "rgb(35, 47, 86)";
       chosen [0] = 1;
   }
   else if (this.id == "btn20") {
       //css goes here
-      document.getElementById("btn10").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn10").style.background = "rgb(35, 47, 86)";
       document.getElementById("btn20").style.background = "rgb(255,255,255, 0.647)";
-      document.getElementById("btn30").style.background = "rgb(215, 147, 79)";
-      document.getElementById("btn40").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn30").style.background = "rgb(35, 47, 86)";
+      document.getElementById("btn40").style.background = "rgb(35, 47, 86)";
       chosen [0] = 2;
   } 
   else if (this.id == "btn30") {
       //css goes here
-      document.getElementById("btn10").style.background = "rgb(215, 147, 79)";
-      document.getElementById("btn20").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn10").style.background = "rgb(35, 47, 86)";
+      document.getElementById("btn20").style.background = "rgb(35, 47, 86)";
       document.getElementById("btn30").style.background = "rgb(255,255,255, 0.647)";
-      document.getElementById("btn40").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn40").style.background = "rgb(35, 47, 86)";
       chosen [0] = 3;
   }
   else if (this.id == "btn40") {
       //css goes here
-      document.getElementById("btn10").style.background = "rgb(215, 147, 79)";
-      document.getElementById("btn20").style.background = "rgb(215, 147, 79)";
-      document.getElementById("btn30").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn10").style.background = "rgb(35, 47, 86)";
+      document.getElementById("btn20").style.background = "rgb(35, 47, 86)";
+      document.getElementById("btn30").style.background = "rgb(35, 47, 86)";
       document.getElementById("btn40").style.background = "rgb(255,255,255, 0.647)";
       chosen [0] = 4;
   }
   else if (this.id == "cstm") {
       chosen [0] = 5;
-      document.getElementById("btn10").style.background = "rgb(215, 147, 79)";
-      document.getElementById("btn20").style.background = "rgb(215, 147, 79)";
-      document.getElementById("btn30").style.background = "rgb(215, 147, 79)";
-      document.getElementById("btn40").style.background = "rgb(215, 147, 79)";
+      document.getElementById("btn10").style.background = "rgb(35, 47, 86)";
+      document.getElementById("btn20").style.background = "rgb(35, 47, 86)";
+      document.getElementById("btn30").style.background = "rgb(35, 47, 86)";
+      document.getElementById("btn40").style.background = "rgb(35, 47, 86)";
   }
   
   if (this.id == "myCheck" && YN[0] == false) {

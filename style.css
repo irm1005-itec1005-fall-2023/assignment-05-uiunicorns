@@ -285,33 +285,35 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
 .mix {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 250px;
-  border: 2rem;
-  border-radius: 1rem;
-  background-color: #888;
-  width: 20%;
-  padding: 1rem;
-  
-
+  padding: 25px;
+  margin-top: 150px;
+  background-color: rgb(35, 47, 86);
+  border: solid;
 }
 
 .mix .alpha .btn-grid {
-  
   display: grid;
   grid-template-columns: 1fr 1fr;
-
+  padding: 15px;
 }
 
 .mix .alpha .btn{
-  appearance: none;
-  background-color: rgb(215, 147, 79);
-  border-width: 5px;
-  border-color: black;
+  border-style: solid;
+  border-color: rgb(215, 79, 79);
+  height: auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  background: rgb(35, 47, 86);
+  border-radius: 3px;
+  color: white;
 }
 
 .mix .alpha .chkbx {
@@ -320,7 +322,24 @@ ul {
 }
 
 .mix .alpha .chkbx .upMark {
-  width: 10%;
+  width: 5%
+}
+
+.custom {
+  font-weight: bold;
+}
+
+.month {
+  font-size: medium;
+  padding-bottom: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.upMark:hover {
+  cursor: pointer;
 }
 
 /* The Modal (background) */
@@ -350,8 +369,9 @@ ul {
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 25px;
+  margin-top: -30px;
+  margin-right: -15px;
 }
 
 .close:hover,

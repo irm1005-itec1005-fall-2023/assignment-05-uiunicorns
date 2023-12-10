@@ -8,26 +8,26 @@
         <link rel="stylesheet" href="./style.css" />
     </head>
     <body>
-        <main class="mss">
+        <main class="mss"> 
             <div class="mix" id="donate">
                 <form id="test" class="alpha">
-                    <section class="btn-grid">
+                    <div class="btn-grid">
                         <button class="btn" type="button" id="btn10">10$</button>
                         <button class="btn" type="button" id="btn20">20$</button>
                         <button class="btn" type="button" id="btn30">30$</button>
                         <button class="btn" type="button" id="btn40">40$</button>
-                    </section>
+                    </div>
 
                     
             
             
-                    <p>Custom Amount</p>
+                    <p class="custom">Custom Amount</p>
                     <label for="cstm"></label>
                     <input type="text" id="cstm" name="inputAmount" />
-                    <section class="chkbx">
-                        <p>Would you like to make monthly for a year?</p>
+                    <div class="chkbx">
+                        <p class="month">Would you like to make monthly for a year?</p>
                         <input type="checkbox" id="myCheck" class="upMark"/>
-                    </section>
+                    </div>
 
                     
                     
@@ -49,18 +49,18 @@
                             </fieldset>
                     
                             <fieldset>
-                                <input type="text" id="cstm" name="inputAmount" placeholder="address" required/>
-                                <input type="text" id="cstm" name="inputAmount" placeholder="address" required/>
-                                <input type="text" id="cstm" name="inputAmount" placeholder="city" required/>
-                                <input type="text" id="cstm" name="inputAmount" placeholder="postal code" required/>
+                                <input type="text" class="cstm" name="inputAmount" placeholder="address" required/>
+                                <input type="text" class="cstm" name="inputAmount" placeholder="address" required/>
+                                <input type="text" class="cstm" name="inputAmount" placeholder="city" required/>
+                                <input type="text" class="cstm" name="inputAmount" placeholder="postal code" required/>
                             </fieldset>
                     
                             <fieldset>
                                 
-                            <input type="text" id="cstm" name="inputAmount" placeholder="name on card" required/>
-                            <input type="tel" id="cstm" name="inputAmount" placeholder="card number" required maxlength="19"/>
-                            <input type="date" id="cstm" name="inputAmount" placeholder="card expiry date" required/>
-                            <input type="number" id="cstm" name="inputAmount" placeholder="CVV" required maxlength="4"/>
+                            <input type="text" class="cstm" name="inputAmount" placeholder="name on card" required/>
+                            <input type="tel" class="cstm" name="inputAmount" placeholder="card number" required maxlength="19"/>
+                            <input type="date" class="cstm" name="inputAmount" required/>
+                            <input type="number" class="cstm" name="inputAmount" placeholder="CVV"/>
                             </fieldset>
                     
                             
@@ -69,7 +69,7 @@
                             </fieldset>
                        
                     
-                            <button class="btn" type="submit" id="finish">donate</button>
+                            <button class="btn" type="submit" id="finish">Donate</button>
                                
                         </form>
                     </div>
