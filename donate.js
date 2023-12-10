@@ -22,7 +22,7 @@ let twenty = document.getElementById("btn20");
 let thirty = document.getElementById("btn30");
 let fourty = document.getElementById("btn40");
 
-let field = document.querySelector(".cstm");
+let field = document.getElementById("cstm");
 let signUp = document.getElementById("myCheck");
 let pay = document.getElementById("page2");
 
